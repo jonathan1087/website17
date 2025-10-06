@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jonathan Christian Putra - Home</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg: #0d0d0d;
+  --text: #e8e8e8;
+  --accent: #8b5cf6;
+  --accent-hover: #a78bfa;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth;}
+body{
+  font-family:'Poppins',sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  overflow-x:hidden;
+}
+
+/* ===== Navbar ===== */
+nav{
+  position:fixed;
+  top:0; left:0; right:0;
+  background:rgba(13,13,13,0.75);
+  backdrop-filter:blur(10px);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 40px;
+  z-index:100;
+}
+nav .logo{
+  font-size:1.4rem;
+  font-weight:700;
+  color:var(--accent);
+}
+nav ul{
+  display:flex;
+  list-style:none;
+  gap:30px;
+}
+nav ul li a{
+  color:var(--text);
+  text-decoration:none;
+  font-weight:600;
+  transition:color .3s;
+}
+nav ul li a:hover{color:var(--accent);}
+
+/* ===== Hero ===== */
+.hero{
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:0 20px;
+  background:radial-gradient(circle at 30% 20%, #1a1a1a 0%, #0d0d0d 100%);
+}
+.hero h1{
+  font-size:3.2rem;
+  font-weight:700;
+  color:var(--accent);
+  margin-bottom:20px;
+}
+.hero p{
+  max-width:600px;
+  color:#cfcfcf;
+  margin-bottom:35px;
+  font-size:1.1rem;
+}
+.btn{
+  display:inline-block;
+  padding:12px 28px;
+  background:var(--accent);
+  color:#fff;
+  border-radius:8px;
+  font-weight:600;
+  text-decoration:none;
+  transition:background .3s;
+}
+.btn:hover{background:var(--accent-hover);}
+
+/* Responsive */
+@media(max-width:768px){
+  nav ul{gap:20px;}
+  .hero h1{font-size:2.4rem;}
+}
+</style>
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav>
+  <div class="logo">JCP</div>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="coding2.html">About</a></li>
+    <li><a href="coding3.html">Portofolio</a></li>
+    <li><a href="coding4.html">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- ===== HERO SECTION ===== -->
+<section class="hero" id="home">
+  <h1>Jonathan Christian Putra</h1>
+  <p>Digital Artist • GFX Anime • VTuber Anime <br>
+    Creating Captivating And Imaginative Digital Artwork.</p>
+  <a href="coding5.html" class="btn">View Works</a>
+</section>
+
+</body>
+</html>

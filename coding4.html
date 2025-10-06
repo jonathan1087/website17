@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kontak – Jonathan Christian Putra</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg:#0d0d0d;
+  --text:#e8e8e8;
+  --accent:#8b5cf6;
+  --accent-hover:#a78bfa;
+  --card:#1a1a1a;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+  font-family:'Poppins',sans-serif;
+  background:var(--bg);
+  color:var(--text);
+}
+
+/* ===== NAVBAR ===== */
+nav{
+  position:fixed;
+  top:0; left:0; right:0;
+  background:rgba(13,13,13,0.75);
+  backdrop-filter:blur(10px);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 40px;
+  z-index:100;
+}
+nav .logo{
+  font-size:1.4rem;
+  font-weight:700;
+  color:var(--accent);
+}
+nav ul{
+  display:flex;
+  list-style:none;
+  gap:30px;
+}
+nav ul li a{
+  color:var(--text);
+  text-decoration:none;
+  font-weight:600;
+  transition:color .3s;
+}
+nav ul li a:hover{color:var(--accent);}
+
+/* ===== CONTACT ===== */
+.contact-section{
+  max-width:700px;
+  margin:120px auto 60px;
+  padding:0 25px;
+  text-align:center;
+}
+.contact-section h1{
+  font-size:2.6rem;
+  color:var(--accent);
+  margin-bottom:20px;
+}
+.contact-section p{
+  color:#cfcfcf;
+  margin-bottom:40px;
+  font-size:1.1rem;
+}
+
+/* Contact Form */
+form{
+  background:var(--card);
+  padding:30px;
+  border-radius:14px;
+  text-align:left;
+}
+form label{
+  display:block;
+  margin-bottom:8px;
+  font-weight:600;
+  color:var(--accent);
+}
+form input,
+form textarea{
+  width:100%;
+  padding:12px 14px;
+  margin-bottom:20px;
+  border:none;
+  border-radius:8px;
+  background:#262626;
+  color:var(--text);
+  font-size:1rem;
+  outline:none;
+  transition:background .3s;
+}
+form input:focus,
+form textarea:focus{
+  background:#333;
+}
+form button{
+  background:var(--accent);
+  color:#fff;
+  border:none;
+  padding:14px 28px;
+  font-size:1rem;
+  font-weight:600;
+  border-radius:8px;
+  cursor:pointer;
+  transition:background .3s;
+}
+form button:hover{background:var(--accent-hover);}
+
+.status-message{
+  margin-top:15px;
+  font-size:0.95rem;
+}
+
+/* Info Box */
+.info-box {
+  margin-top: 20px;       /* ganti dari 40px biar ga terlalu jauh dari form */
+  font-size: 0.95rem;
+  color: #fb0000;
+  text-align: center;     /* biar rapi di tengah */
+  line-height: 1.5;       /* jarak baris lebih proporsional */
+}
+
+.info-box p {
+  margin: 6px 0;          /* kecilin margin antar paragraf */
+}
+
+.info-box a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color .3s;
+}
+.info-box a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+/* ======== NAVBAR DASAR ======== */
+nav {
+  background: #1e1e1e;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+nav .logo {
+  color: #fff;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  padding: 8px 0;
+  /* 💡 Transisi warna & scale jadi lebih smooth */
+  transition: 
+    color 0.5s cubic-bezier(0.25, 1, 0.5, 1),
+    transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+
+nav ul li a:hover::after {
+  width: 100%;
+  left: 0; /* mulai dari tengah jadi ke kiri */
+}
+
+nav ul li a:hover {
+  color:#8b5cf6;
+  transform: translateY(-2px); /* sedikit naik lembut */
+}
+
+/* ======== ANIMASI SAAT DI-KLIK ======== */
+nav ul li a:active {
+  transform: scale(0.96);
+  transition: transform 0.25s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* ======== HALAMAN AKTIF ======== */
+nav ul li a.active {
+  color: #ff6f61;
+}
+nav ul li a.active::after {
+  width: 100%;
+  left: 0;
+}
+
+
+
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">JCP</div>
+  <ul>
+    <li><a href="coding1.html">Home</a></li>
+    <li><a href="coding2.html">About</a></li>
+    <li><a href="coding3.html">Portofolio</a></li>
+    <li><a href="coding4.html">Contact</a></li>
+  </ul>
+</nav>
+
+
+<!-- ===== CONTACT CONTENT ===== -->
+<section class="contact-section">
+  <h1>Contact me</h1>
+  <p>
+   Have questions, collaboration ideas, or would like to commission a digital work?
+Please fill out the form below or contact me via email or social media.
+  </p>
+
+  <!-- 🔑 Ganti action dengan endpoint Formspree kamu -->
+  <form id="contactForm" action="https://formspree.io/f/mwprkvjj" method="POST">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="Nama lengkap" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="Alamat email" required>
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="5" placeholder="Tulis pesan..." required></textarea>
+
+    <button type="submit">Send message</button>
+    <p class="status-message" id="formStatus"></p>
+  </form>
+
+  <div class="info-box">
+    <p>Or contact me directly via:</p>
+    <p>Email : <a href="mailto:jonathan.cp108@example.com">jonathan.cp108@gmail.com</a></p>
+    <p>Instagram : <a href="https://instagram.com/jonathan.cp108?igsh=ZHpoZXllcnFsNjlh" target="_blank">@jonathan.cp108</a></p>
+  </div>
+</section>
+
+<script>
+  // Optional: feedback sukses/error tanpa reload halaman
+  const form = document.getElementById('contactForm');
+  const statusMsg = document.getElementById('formStatus');
+
+  form.addEventListener('submit', async function(e) {
+    e.preventDefault();
+    statusMsg.textContent = "Mengirim...";
+    try {
+      const response = await fetch(this.action, {
+        method: this.method,
+        body: new FormData(this),
+        headers: { 'Accept': 'application/json' }
+      });
+      if (response.ok) {
+        statusMsg.textContent = "✅ Pesan berhasil dikirim!";
+        form.reset();
+      } else {
+        statusMsg.textContent = "❌ Terjadi kesalahan. Coba lagi.";
+      }
+    } catch (error) {
+      statusMsg.textContent = "⚠️ Gagal terhubung ke server.";
+    }
+  });
+</script>
+
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    document.body.classList.add('loaded');
+  });
+</script>
+
+
+</body>
+</html>

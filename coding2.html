@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About– Jonathan Christian Putra</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg: #0d0d0d;
+  --text: #e8e8e8;
+  --accent: #8b5cf6;
+  --accent-hover: #a78bfa;
+  --card: #1a1a1a;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+  font-family:'Poppins',sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.7;
+}
+
+/* ===== Navbar ===== */
+nav{
+  position:fixed;
+  top:0; left:0; right:0;
+  background:rgba(13,13,13,0.75);
+  backdrop-filter:blur(10px);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 40px;
+  z-index:100;
+}
+nav .logo{
+  font-size:1.4rem;
+  font-weight:700;
+  color:var(--accent);
+}
+nav ul{
+  display:flex;
+  list-style:none;
+  gap:30px;
+}
+nav ul li a{
+  color:var(--text);
+  text-decoration:none;
+  font-weight:600;
+  transition:color .3s;
+}
+nav ul li a:hover{color:var(--accent);}
+
+nav ul li a:hover{color:var(--accent);}
+
+/* ===== About Section ===== */
+.about-section{
+  max-width:1000px;
+  margin:120px auto 60px;
+  padding:0 25px;
+  text-align:center;
+}
+.about-section h1{
+  font-size:2.6rem;
+  color:var(--accent);
+  margin-bottom:25px;
+}
+.about-section p{
+  color:#cfcfcf;
+  margin-bottom:40px;
+  font-size:1.1rem;
+}
+
+/* Card Area */
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:25px;
+  margin-top:20px;
+}
+.card{
+  background:var(--card);
+  padding:25px;
+  border-radius:14px;
+  transition:transform .3s;
+}
+.card:hover{transform:translateY(-6px);}
+.card h3{
+  color:var(--accent);
+  margin-bottom:12px;
+  font-size:1.3rem;
+}
+.card p{color:#d3d3d3;font-size:0.95rem;}
+
+/* Back Button */
+.back-btn{
+  display:inline-block;
+  margin-top:50px;
+  padding:12px 28px;
+  background:var(--accent);
+  color:#fff;
+  text-decoration:none;
+  border-radius:8px;
+  font-weight:600;
+  transition:background .3s;
+}
+.back-btn:hover{background:var(--accent-hover);}
+
+:root{
+  --bg:#0d0d0d;
+  --text:#e8e8e8;
+  --accent:#8b5cf6;
+  --accent-hover:#a78bfa;
+}
+
+nav{
+  position:fixed;
+  top:0; left:0; right:0;
+  background:rgba(0, 0, 0, 0.75);
+  backdrop-filter:blur(10px);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 40px;
+  z-index:100;
+  box-shadow:0 2px 12px rgba(0,0,0,0.4);
+}
+
+nav .logo{
+  font-size:1.4rem;
+  font-weight:700;
+  color:var(--accent);
+  transition:transform .3s ease;
+}
+nav .logo:hover{
+  transform:scale(1.1);
+}
+
+nav ul{
+  display:flex;
+  list-style:none;
+  gap:30px;
+}
+
+nav ul li a{
+  position:relative;
+  color:var(--text);
+  text-decoration:none;
+  font-weight:600;
+  padding:6px 0;
+  transition:color .3s ease, transform .25s cubic-bezier(0.34,1.56,0.64,1);
+}
+
+/* Hover efek elastis */
+nav ul li a:hover{
+  color:var(--accent);
+  transform:scale(1.05);
+}
+nav ul li a:hover::after{
+  width:100%;
+}
+
+/* Klik (active) efek */
+nav ul li a:active{
+  transform:scale(0.95);
+}
+
+/* ======== NAVBAR DASAR ======== */
+nav {
+  background: #1e1e1e;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+nav .logo {
+  color: #fff;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  padding: 8px 0;
+  /* 💡 Transisi warna & scale jadi lebih smooth */
+  transition: 
+    color 0.5s cubic-bezier(0.25, 1, 0.5, 1),
+    transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* ======== HOVER ANIMASI ======== */
+nav ul li a:hover::after {
+  width: 100%;
+  left: 0; /* mulai dari tengah jadi ke kiri */
+}
+
+nav ul li a:hover {
+  color: #8b5cf6;
+  transform: translateY(-2px); /* sedikit naik lembut */
+}
+
+/* ======== ANIMASI SAAT DI-KLIK ======== */
+nav ul li a:active {
+  transform: scale(0.96);
+  transition: transform 0.25s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* ======== HALAMAN AKTIF ======== */
+nav ul li a.active {
+  color: #8b5cf6;
+}
+nav ul li a.active::after {
+  width: 100%;
+  left: 0;
+}
+
+
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">JCP</div>
+  <ul>
+    <li><a href="coding1.html">Home</a></li>
+    <li><a href="coding2.html">About</a></li>
+    <li><a href="coding3.html">Portofolio</a></li>
+    <li><a href="coding4.html">Contact</a></li>
+  </ul>
+</nav>
+
+
+<!-- ===== ABOUT CONTENT ===== -->
+<section class="about-section">
+  <h1>About me</h1>
+  <p>
+    Iam <strong>Jonathan Christian Putra</strong>, A digital artist specializing in anime art, GFX, and creative designs for children and students.
+By combining imagination and technology, I create works that are captivating, colorful, and in line with creative industry trends.
+  </p>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Expertise</h3>
+      <p>Anime Illustration, Digital Painting, GFX Design, VTuber Character Art, and Opening Animation.</p>
+    </div>
+    <div class="card">
+      <h3>Experience</h3>
+      <p>Working on various digital art projects for students, children's educational content, and local anime communities.</p>
+    </div>
+    <div class="card">
+      <h3>Visi</h3>
+      <p>Presenting fun and inspiring digital art, opening up creative opportunities for the younger generation.</p>
+    </div>
+  </div>
+
+
+
+
+</body>
+</html>

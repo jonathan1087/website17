@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lihat Karya – Jonathan Christian Putra</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg:#0d0d0d;
+  --text:#e8e8e8;
+  --accent:#8b5cf6;
+  --accent-hover:#a78bfa;
+  --card:#1a1a1a;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+  font-family:'Poppins',sans-serif;
+  background:var(--bg);
+  color:var(--text);
+}
+
+/* ===== NAVBAR ===== */
+nav{
+  position:fixed;
+  top:0; left:0; right:0;
+  background:rgba(13,13,13,0.75);
+  backdrop-filter:blur(10px);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 40px;
+  z-index:100;
+}
+nav .logo{
+  font-size:1.4rem;
+  font-weight:700;
+  color:var(--accent);
+}
+nav ul{
+  display:flex;
+  list-style:none;
+  gap:30px;
+}
+nav ul li a{
+  color:var(--text);
+  text-decoration:none;
+  font-weight:600;
+  transition:color .3s;
+}
+nav ul li a:hover{color:var(--accent);}
+
+/* ===== HERO ===== */
+.hero{
+  margin-top:100px;
+  text-align:center;
+  padding:0 20px;
+}
+.hero h1{
+  font-size:2.6rem;
+  color:var(--accent);
+  margin-bottom:15px;
+}
+.hero p{
+  font-size:1.1rem;
+  color:#cfcfcf;
+  margin-bottom:50px;
+}
+
+/* ===== GALLERY ===== */
+.gallery{
+  max-width:1100px;
+  margin:0 auto 80px;
+  padding:0 20px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:30px;
+}
+.card{
+  background:var(--card);
+  border-radius:14px;
+  overflow:hidden;
+  transition:transform .3s, box-shadow .3s;
+}
+.card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 0 18px rgba(139,92,246,0.4);
+}
+.card img{
+  width:100%;
+  height:200px;
+  object-fit:cover;
+  display:block;
+}
+.card .info{
+  padding:18px;
+}
+.card .info h3{
+  color:var(--accent);
+  font-size:1.2rem;
+  margin-bottom:8px;
+}
+.card .info p{
+  color:#d0d0d0;
+  font-size:0.95rem;
+  line-height:1.4;
+}
+
+/* === VTuber Card di Tengah === */
+.card.vtuber{
+  grid-column:1 / -1;      /* ambil seluruh lebar grid */
+  justify-self:center;     /* center horizontal */
+  max-width:320px;         /* biar proporsional */
+}
+</style>
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav>
+  <div class="logo">JCP</div>
+  <ul>
+    <li><a href="coding1.html">Home</a></li>
+    <li><a href="coding2.html">About</a></li>
+    <li><a href="coding3.html">Portofolio</a></li>
+    <li><a href="coding4.html">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <h1>Digital Works Collection</h1>
+  <p>Here are some of the anime art, digital painting, and GFX designs I have worked on.</p>
+</section>
+
+<!-- ===== GALLERY ===== -->
+<section class="gallery">
+  <!-- Card 1 -->
+  <div class="card">
+    <img src="WhatsApp Image 2025-10-06 at 06.38.46_e0679551.jpg" alt="Anime Art">
+    <div class="info">
+      <h3>Anime Illustration</h3>
+      <p>Anime character illustrations with realistic color and lighting details.</p>
+    </div>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="card">
+    <img src="naruto.jpg" alt="Digital Painting">
+    <div class="info">
+      <h3>Digital Painting</h3>
+      <p>Digital painting that combines fantasy concepts and modern techniques.</p>
+    </div>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="card">
+    <img src="Vtuber.png" alt="GFX Design">
+    <div class="info">
+      <h3>GFX Design</h3>
+      <p>Graphic design for branding, posters, and social media needs.</p>
+    </div>
+  </div>
+
+  <!-- Card 4 (VTuber) -->
+  <div class="card vtuber">
+    <img src="Screenshot 2025-10-06 070736.png" alt="VTuber Character">
+    <div class="info">
+      <h3>VTuber Character</h3>
+      <p>2D/3D character design for streaming and digital entertainment purposes.</p>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
